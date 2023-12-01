@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="761.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <SplitPane dividerPositions="0.29322638146167557" orientation="VERTICAL" prefHeight="690.0" prefWidth="996.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TreeView fx:id="treeView" layoutX="14.0" layoutY="46.0" prefHeight="138.0" prefWidth="186.0" />
+                  <ListView fx:id="listCtrl" layoutX="705.0" layoutY="46.0" prefHeight="138.0" prefWidth="218.0" />
+                  <Text layoutX="64.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items Container" />
+                  <Text layoutX="775.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items Controls" />
+                  <Text layoutX="318.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farm Dashboard Application">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="318.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interact with controls for updating farm items and scanning the entire farm with buttons provided below" wrappingWidth="283.78466796875" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="bottomPane" minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="1314.0" />
+        </items>
+      </SplitPane>
+      <Text layoutX="28.0" layoutY="727.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drone Animation Controls" />
+      <Button layoutX="195.0" layoutY="709.0" mnemonicParsing="false" onAction="#visitItemDrone" text="Visit" />
+      <Button layoutX="299.0" layoutY="709.0" mnemonicParsing="false" onAction="#scanFarmDrone" text="Scan" />
+   </children>
+</AnchorPane>
